@@ -1,23 +1,23 @@
 <?php
 
-namespace blog\controllers;
+namespace mvc\controllers;
 
-use blog\libs\BaseController;
+use mvc\libs\BaseController;
 
 class user extends BaseController
 {
 
-    function __construct()
-    {
-        parent::__construct();
-    }
+	function __construct()
+	{
+		parent::__construct();
+	}
 
-    function login()
-    {
+	function login()
+	{
 
-        $data = "damith";
-        $this->render('user/login', $data);
-    }
+		$data = "damith";
+		$this->render('user/login', $data);
+	}
 
 }
 

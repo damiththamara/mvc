@@ -1,6 +1,6 @@
 <?php
 
-namespace blog\libs;
+namespace mvc\libs;
 
 require 'libs/BaseController.php';
 
@@ -31,7 +31,7 @@ class Bootsrap
             $file = 'controllers/' . $url[0] . '.php';
             if (file_exists($file)) {
                 require $file;
-                $con = '\blog\controllers\\' . $url[0];
+                $con = '\mvc\controllers\\' . $url[0];
                 $controller = new $con;
                 $controller->{$url[1]}();
             } else {

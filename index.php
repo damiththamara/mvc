@@ -1,8 +1,9 @@
 <?php
 
-namespace blog;
+namespace mvc;
 
 require 'libs/bootstrap.php';
 
-$app = new \blog\libs\Bootsrap();
+$app = new \mvc\libs\Bootsrap();
+
 ?>
